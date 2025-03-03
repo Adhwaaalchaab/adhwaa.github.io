@@ -1,60 +1,70 @@
-/* General Styles */
+/* General Styling */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
     margin: 0;
-    padding: 20px;
+    padding: 0;
+    background-color: #f4f4f4;
 }
 
-/* Container */
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    background: #0077b5;
+    padding: 15px;
+    color: white;
 }
 
-/* Profile Card */
-.profile-card {
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Profile Section */
+header {
     text-align: center;
-    padding: 20px;
+    padding: 40px;
 }
 
-.profile-card img {
+header img {
     width: 150px;
     border-radius: 50%;
 }
 
-.profile-card h1 {
-    margin: 10px 0;
-}
-
-.profile-card .email-btn {
+header .btn {
     display: inline-block;
     padding: 10px 15px;
     background: #0077b5;
     color: white;
     text-decoration: none;
     border-radius: 5px;
-    margin-top: 10px;
 }
 
-.section {
-    margin-top: 20px;
+/* Sections */
+section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
 }
 
-h2 {
-    border-bottom: 2px solid #0077b5;
-    padding-bottom: 5px;
-}
-
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-ul li {
-    padding: 5px 0;
+/* Contact Links */
+.contact-links a {
+    display: inline-block;
+    margin: 10px;
+    color: #0077b5;
+    text-decoration: none;
+    font-weight: bold;
 }
